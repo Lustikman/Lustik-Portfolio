@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nehorai Lustikman | Lustik</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,12 +16,52 @@
 
     <!-- NAVIGATION -->
     <nav>
-      <a href="about.html">About</a>
+      <button class="nav-btn" data-modal="about-modal">About</button>
       <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+      <button class="nav-btn" data-modal="skills-modal">Skills</button>
+      <button class="nav-btn" data-modal="contact-modal">Contact</button>
     </nav>
   </header>
 
+  <!-- ABOUT MODAL -->
+  <div class="modal" id="about-modal">
+    <div class="modal-content">
+      <button class="close-btn" data-close>&times;</button>
+      <h2>About</h2>
+      <p>
+        I got into coding in high school through Magshimim, one of Israel's top tech programs for young developers, and it's where I found what I actually wanted to do.
+        Things didn't go as planned with the army, but that just redirected my focus — now I'm fully committed to university and leveling up my skills. I want to see how far I can actually push myself.
+      </p>
+    </div>
+  </div>
+
+  <!-- SKILLS MODAL -->
+  <div class="modal" id="skills-modal">
+    <div class="modal-content">
+      <button class="close-btn" data-close>&times;</button>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git / GitHub</li>
+        <li>Python</li>
+        <li>C / C++</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-content">
+      <button class="close-btn" data-close>&times;</button>
+      <h2>Contact</h2>
+      <a href="mailto:nehorai.lustikman.dev@gmail.com">Email</a>
+      <a href="https://github.com/Lustikman" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/nehorai-lustikman-09a335423/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
